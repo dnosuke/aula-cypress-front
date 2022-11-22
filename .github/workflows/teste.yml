@@ -11,6 +11,7 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v3
+        continue-on-error: true
         with:
           browser: chrome
           build: npm i
