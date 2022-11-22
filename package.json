@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "npx cypress run --config video=false --env allure=true",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "allure:open": "allure generate allure-results && allure open allure-report"
   },
   "keywords": [],
   "author": "",
