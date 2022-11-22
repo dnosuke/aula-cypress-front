@@ -12,7 +12,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          project: ./cypress-aula-front
           browser: chrome
           build: npm i
           start: npx cypress run --headless -b chrome
